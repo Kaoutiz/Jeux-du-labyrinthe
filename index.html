@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <div id="labyrinthe">
+        <div id="game-display">
+            <div id="left-bar">
+                <div id="score">
+                    <h2>Score</h2>
+                    <p id="score-value">0</p>
+                </div>
+                <div id="fuel">
+                    <h2>Fuel</h2>
+                    <p id="fuel-value">50/50</p>
+                </div>
+                <div id="fuel-bar">
+                    <div id="fuel-bar-content"></div>
+                </div>
+            </div>
+            <div id="grid"></div>
+        </div>
+        <div id="control">
+            <div id="direction">
+                <div id="left-button">Turn left</div>
+                <div id="middle-button">
+                    <div id="forward-button">Forward</div>
+                    <div id="shoot-button">Shoot</div>
+                </div>
+                <div id="right-button">Turn right</div>
+            </div>
+            <div id="reset-button">Reset</div>
+        </div>
+        <div id="game-over">
+            <h1 id="game-over-content"></h1>
+            <h1>Score: <span id="display_score">0</span></h1>
+            <button id="game-over-button">PLAY AGAIN</button>
+        </div>
+    </div>
+    <script type="module" src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 15px;
+    color: #fff;
+}
+
+p{
+    font-size: 13px;
+}
+
+#labyrinthe{
+    width: 645px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 100px auto;
+}
+
+#game-display{
+    display: flex;
+    flex-direction: row;
+}
+
+#left-bar{
+    width: 100px;
+    height: 525px;
+    background-color: #2f3034;
+    border: inset 5px #2f3034;
+}
+
+#score, #fuel{
+    height: 70px;
+    background-color: #2f3034;
+    border: inset 3px #2f3034;
+    border-right: 0;
+    padding-left: 5px;
+}
+
+#fuel-bar{
+    width: 100%;
+    height: 373px;
+    display: flex;
+    align-items: end;
+}
+
+#fuel-bar-content{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+#grid{
+    width: 525px;
+    height: 525px;
+    border: inset 5px #2f3034;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tuile{
+    width: 25px;
+    height: 25px;
+}
+
+.tuile-vide{
+    background-color: #d7cedf;
+    border: solid 2px #b4bec7;
+    padding: 3px;
+}
+
+.tuile-fragile{
+    background-color: green;
+    border: inset 5px green;
+    text-align: center;
+    line-height: 30px;
+}
+
+.tuile-moyenne{
+    background-color: blue;
+    border: inset 5px blue;
+    text-align: center;
+    line-height: 30px;
+}
+
+.tuile-solide{
+    background-color: red;
+    border: inset 5px red;
+    text-align: center;
+    line-height: 30px;
+}
+
+.unbreaking{
+    background-color: black;
+    border: inset 5px black;
+    text-align: center;
+    line-height: 30px;
+}
+
+.tresor{
+    background: url(../img/tresor.png) no-repeat;
+    background-size: cover;
+    padding: 3px;
+    border: solid 2px #b4bec7;
+    background-color: #d7cedf;
+}
+
+.essence{
+    background: url(../img/essence.png) no-repeat;
+    background-size: cover;
+    padding: 3px;
+    border: solid 2px #b4bec7;
+    background-color: #d7cedf; 
+}
+
+.tank{
+    background: url(../img/tank.png) no-repeat;
+    background-size: cover;
+    padding: 3px;
+    border: solid 2px #b4bec7;
+    background-color: #d7cedf;
+    transform: rotate(0deg);
+}
+
+#control{
+    width: 100%;
+    height: 110px;
+    background-color: #2f3034;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#direction{
+    display: flex;
+    margin-left: 110px;
+}
+
+#left-button, #right-button{
+    background-color: #fff;
+    color: #2f3034;
+    width: 90px;
+    height: 92px;
+    text-align: center;
+    line-height: 92px;
+    cursor: pointer;
+}
+
+#left-button{
+    margin-right: 2px;
+}
+
+#right-button{
+    margin-left: 2px;
+}
+
+#middle-button{
+    display: flex;
+    flex-direction: column;
+}
+
+#forward-button, #shoot-button{
+    background-color: #fff;
+    color: #2f3034;
+    width: 75px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+#forward-button{
+    margin-bottom: 2px;
+}
+
+#reset-button{
+    width: 75px;
+    height: 45px;
+    background-color: #fff;
+    color: #2f3034;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+#game-over{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 645px;
+    height: 645px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+#game-over button{
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+}
